@@ -1,0 +1,12 @@
+.main {
+    height: 200%;
+}
+
+.canvas-controller {
+    position: fixed;
+    width: 100%;
+    height: 200rpx;
+    background: #000;
+    left: 0;
+    bottom: 0;
+}

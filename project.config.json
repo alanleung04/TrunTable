@@ -1,0 +1,106 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.0",
+	"appid": "wxcddc17929870f018",
+	"projectname": "%E5%8F%89%E5%8F%89%E5%8F%89",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "room",
+					"pathName": "pageRoom/pages/room/room",
+					"query": "gameStatus=3",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "startGame",
+					"pathName": "pageRoom/pages/startGame/startGame",
+					"query": "gameStatus=3",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "好友组队",
+					"pathName": "pageRoom/pages/room/room",
+					"query": "gameStatus=5&date=190624&roomId=331391",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "rank",
+					"pathName": "/pages/rank/rank",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "好友组队",
+					"pathName": "pageRoom/pages/room/room",
+					"query": "gameStatus=0&teamId=1143363923189178370",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "游戏回顾",
+					"pathName": "pageRoom/pages/room/room",
+					"query": "gameStatus=6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "录音测试",
+					"pathName": "pages/room/room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "bank",
+					"pathName": "pages/index/index",
+					"query": "status=3&userId=11471856",
+					"scene": null
+				}
+			]
+		}
+	}
+}

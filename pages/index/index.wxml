@@ -1,0 +1,9 @@
+<view class="main">
+    <canvas type="webgl" id="webgl" width="{{canvasWidth||(375*2)}}" height="{{canvasHeight || 567 * 2}}" style='width:{{canvasStyleWidth||"375px"}};height:{{canvasStyleHeight||"567px"}};' bindtouchstart='onTouchStart' bindtouchmove='onTouchMove' bindtouchend='onTouchEnd'></canvas>
+
+    <view>
+        <button bindtap="clear">清空</button>
+        <button bindtouchstart="makePenFly">飞刀</button>
+    </view>
+    <!-- <cover-view class="canvas-controller"></cover-view> -->
+</view>

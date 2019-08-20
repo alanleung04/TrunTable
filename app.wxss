@@ -1,0 +1,419 @@
+/**app.wxss**/
+
+/**app.wxss**/
+@import 'weui.wxss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; *//* justify-content: space-between; *//* padding: 200rpx 20rpx; */
+  box-sizing: border-box;
+}
+
+.main-bg {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+}
+
+page {
+  /*background-color: #fbf9fe !important;*/
+  background-color: #f2f2f2 !important;
+  /* background-color: #f5f6f5 ; */
+  height: 100%;
+  font-family: Microsoft YaHei;
+}
+
+.page-body {
+  width: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.page-foot {
+  padding: 0 0 34rpx 0;
+  text-align: center;
+  color: #1aad19;
+  font-size: 0;
+}
+
+.foot2 {
+  color: #586c94;
+  font-size: 26rpx;
+  display: inline-block;
+}
+
+.foot1 {
+  margin: 0 auto;
+  color: #888;
+  font-size: 24rpx;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.content-body {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+
+.torecord {
+  color: #586c94;
+  font-size: 28rpx;
+  display: inline-block;
+}
+
+.descript {
+  margin: 0 auto;
+  color: #888;
+  font-size: 28rpx;
+}
+
+/* authorization modal */
+
+.auth-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-modal-container {
+  margin: -64rpx 90rpx 0;
+  background-color: white;
+  border-radius: 8rpx;
+  position: relative;
+}
+
+.auth-modal-title {
+  font-size: 36rpx;
+  color: black;
+  font-weight: bold;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #eaeaea;
+}
+
+.auth-modal-content {
+  margin-top: 42rpx;
+  padding: 0 48rpx;
+  font-size: 34rpx;
+  color: #333;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.auth-modal-content-tips {
+  margin-top: 20rpx;
+  padding: 0 48rpx;
+  font-size: 30rpx;
+  color: #ccc;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.auth-btn-container {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 16rpx;
+  margin-top: 42rpx;
+}
+
+.modal-auth-button {
+  font-size: 34rpx !important;
+  margin: 0 48rpx !important;
+  font-weight: bold;
+}
+
+/* .song-list{
+  style="padding-bottom:64rpx;"
+} */
+
+.song-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgba(224, 224, 224, 0.6);
+  padding: 30rpx 0 30rpx 0;
+  align-items: center;
+  overflow: visible;
+}
+
+.song-colunm {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-row {
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-lyrics-row {
+  display: block !important;
+  margin-top: 26rpx;
+  line-height: 36rpx;
+}
+
+.song-lyrics {
+  font-size: 26rpx;
+  color: #a5a5a5;
+}
+
+.song-title {
+  display: flex;
+  align-items: baseline;
+  font-size: 30rpx;
+  color: #333;
+  /* line-height: 34rpx; */
+  height: 34rpx;
+}
+
+.song-listen {
+  display: flex;
+  font-size: 26rpx;
+  padding: 0 20rpx;
+  align-items: center;
+}
+
+.ic-play-btn {
+  width: 16rpx;
+  height: 20rpx;
+  display: flex;
+  /* margin-top: 10rpx; */
+  margin-left: 8rpx;
+}
+
+.ic-pause-btn {
+  width: 23rpx;
+  height: 23rpx;
+  /* display: flex; */
+  margin-top: 9rpx;
+  margin-left: 8rpx;
+}
+
+.song-lyrics {
+  font-size: 26rpx;
+  color: #a5a5a5;
+  margin-right: 20rpx;
+}
+
+.song-artist {
+  color: #ccc;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+}
+
+.listen {
+  display: flex;
+  font-size: 26rpx;
+  color: #efa150;
+  line-height: 1;
+}
+
+.song-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* width: 80rpx; */
+  position: relative;
+}
+
+.songlist-add, .songlist-del {
+  display: flex;
+}
+
+.song-left {
+  width: 600rpx;
+}
+
+.song-name {
+  max-width: 290rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ic-song-chose {
+  height: 52rpx;
+  width: 52rpx;
+}
+
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  bottom: -110rpx;
+  z-index: 1003;
+  height: 110rpx;
+  width: 100%;
+  background: #f5535e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.bar-ani {
+  bottom: 0;
+}
+
+.bar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 162rpx;
+  height: 100%;
+  background: #ffd666;
+}
+
+.bar-right {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.ic-song-chose {
+  height: 52rpx;
+  width: 52rpx;
+}
+
+.chose-song-num {
+  position: absolute;
+  left: 106rpx;
+  top: 22rpx;
+  background-color: #f5535e;
+  color: #fff;
+  height: 28rpx;
+  width: 28rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28rpx;
+  font-size: 20rpx;
+}
+
+.select-list-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.select-list-box {
+  position: fixed;
+  bottom: 110rpx;
+  left: 0;
+  z-index: 1002;
+  width: 100%;
+  max-height: 100%;
+  background: #fff;
+  border-radius: 20rpx 20rpx 0 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  transform: translate3d(0, 140%, 0);
+}
+
+.select-list-bot {
+  padding-bottom: 0;
+}
+
+.select-box-tip {
+  font-size: 26rpx;
+  color: #ccc;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  /* text-align: center; */
+}
+
+.navbar-div {
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  top: 96rpx;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.word-area {
+  /* padding-left: 32rpx; */
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.word-item {
+  border: 0 !important;
+  display: flex;
+  padding: 40rpx 32rpx;
+}
+
+.container-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #23174f;
+}
+
+.bg-t {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bg-b {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.default-btn {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.default-btn::after {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+.btn-click {
+  transform: scale(0.9, 0.9)!important;
+  opacity: 0.9!important
+}
