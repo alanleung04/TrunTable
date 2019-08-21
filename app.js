@@ -1,7 +1,7 @@
 //app.js
 var getConfigCount = 0;
 var app = '';
-var wxKit = require('./utils/wx');
+
 // const THREE = require('./utils/three.js')
 // const setting = require('./utils/setting.js')
 App({

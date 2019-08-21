@@ -55,7 +55,7 @@ class GameMain {
 
         this.renderer = new THREE.WebGLRenderer({ canvas: canvas, antalias: true });
         this.renderer.setSize(canvas.width, canvas.height);
-        // this.addPen()
+        this.addPen()
     }
 
     clear() {
