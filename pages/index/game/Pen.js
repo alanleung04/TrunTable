@@ -56,7 +56,7 @@ class Pen extends THREE.Group {
             return;
         }
         if (this.move) {
-            this.position.y += 35;
+            this.position.y += 15;
             // 检测碰撞
             this.crashTest(object);
 
@@ -81,27 +81,30 @@ class Pen extends THREE.Group {
         originPoint.z = 100;
         // console.log(object);
         // return;
-        ray.near = 0;
         for (let posIndex = 0; posIndex < this.pen.geometry.vertices.length; posIndex++) {
+            // 原顶点坐标
             let localVertex = this.pen.geometry.vertices[posIndex].clone();
+            // 对顶点坐标作变换，获取变换后的真实坐标
             let globalVertex = localVertex.applyMatrix4(this.pen.matrix);
+            // 刀对象的位置，因为这里的顶点位置都是在刀对象上的，所以计算方向向量要用到刀在group中的相对位置
             let pen_pos = this.pen.position.clone();
+            // 给 "高度"
             pen_pos.z = 100;
+            // 坐标相减获取方向向量
             let directionVector = globalVertex.sub(pen_pos);
-
+            // 设置射线
             ray.set(originPoint, directionVector.clone().normalize())
-
+                // 获取相交的对象，返回是一个数组
             let result = ray.intersectObjects(object.children, true)
-
-            // console.log(result);
+            console.log(result);
             if (result.length > 0) {
                 this.move = false;
 
-                if (result[0].object.name == 'table') {
-                    this.main.penFlySuccess(result[0].distance);
-                } else {
-                    this.main.penFlyFail();
-                }
+                // if (result[0].object.name == 'table') {
+                //     this.main.penFlySuccess(result[0].distance);
+                // } else {
+                //     this.main.penFlyFail();
+                // }
                 break;
             }
         }
